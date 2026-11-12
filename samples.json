@@ -1,0 +1,6 @@
+{
+  "source": [["ada", 1, 0], ["bo", 1, 1], ["cy", 1, 1]],
+  "first": {"job": "daily-a", "epoch": "may", "members": ["ada", "bo"]},
+  "overlap": {"job": "daily-b", "epoch": "may", "members": ["bo", "cy"]},
+  "correction": [["bo", 2, 0]]
+}

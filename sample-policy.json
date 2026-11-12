@@ -1,0 +1,25 @@
+{
+  "cap": 1,
+  "nodes": [
+    {"op":"revise","at":"initial","next":1},
+    {"op":"submit","job":"ab","epoch":"e1","members":["ada","bo"],"next":2},
+    {"op":"prepare","job":"ab","worker":"w","now":0,"save":"ab","next":3},
+    {"op":"push","handle":"ab","next":4},
+    {"op":"submit","job":"bc","epoch":"e1","members":["bo","cy"],"next":5},
+    {"op":"prepare","job":"bc","worker":"w","now":1,"save":"bc","next":6},
+    {"op":"push","handle":"bc","fail":"after_receiver","next":7},
+    {"op":"branch","job":"bc","equals":1,"yes":8,"no":12},
+    {"op":"cancel","job":"bc","next":9},
+    {"op":"revise","at":"correction","next":10},
+    {"op":"submit","job":"ac","epoch":"e1","members":["ada","cy"],"next":11},
+    {"op":"prepare","job":"ac","worker":"w","now":2,"save":"ac","next":16},
+    {"op":"submit","job":"ac","epoch":"e1","members":["ada","cy"],"next":13},
+    {"op":"prepare","job":"ac","worker":"w","now":2,"save":"ac","next":14},
+    {"op":"push","handle":"ac","next":15},
+    {"op":"revise","at":"correction","next":17},
+    {"op":"push","handle":"ac","next":17},
+    {"op":"submit","job":"all","epoch":"e1","members":["ada","bo","cy"],"next":18},
+    {"op":"prepare","job":"all","worker":"w","now":3,"save":"all","next":19},
+    {"op":"push","handle":"all","next":-1}
+  ]
+}

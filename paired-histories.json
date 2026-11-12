@@ -1,0 +1,10 @@
+{
+  "left": {
+    "initial": [["ada",1,0],["bo",1,1],["cy",1,0]],
+    "correction": [["ada",2,1],["bo",2,1],["cy",2,0]]
+  },
+  "right": {
+    "initial": [["ada",1,1],["bo",1,1],["cy",1,0]],
+    "correction": [["ada",2,1],["bo",2,1],["cy",2,0]]
+  }
+}
